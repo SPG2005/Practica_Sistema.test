@@ -8,12 +8,12 @@
 
 zone "sistema.test" {
     type slave;
-    file "/var/lib/bind/slave.sistema.test.dns";
+    file "/var/lib/bind/SLAVE.sistema.test.dns";
     masters { 192.168.57.103;}; 
 };
 
 zone "57.168.192.in-addr.arpa" {
     type slave; 
-    file "/var/lib/bind/57.168.192.zone.dns";
+    file "/var/lib/bind/SLAVE.sistemaInverso.test.dns";
     masters { 192.168.57.103; };
 };
