@@ -31,7 +31,7 @@ Vagrant.configure("2") do |config|
       sudo cp -v /vagrant/files/named.conf.options /etc/bind
       sudo cp -v /vagrant/files/masternamed.conf.local /etc/bind/named.conf.local
       sudo cp -v /vagrant/files/sistema.test.zone.dns /var/lib/bind/.sistema.test.zone.dns
-      sudo cp -v /vagrant/files/57.168.192.zonedns /var/lib/bind/57.168.192.zone.dns
+      sudo cp -v /vagrant/files/57.168.192.zone.dns /var/lib/bind/57.168.192.zone.dns
       echo "nameserver 192.168.57.103" | sudo tee /etc/resolv.conf
       sudo systemctl restart bind9
     SHELL
